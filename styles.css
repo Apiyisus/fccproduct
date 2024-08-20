@@ -1,0 +1,216 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/*Parte superior*/
+#header {
+    background: #f5f5f5;
+    color: #222;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px;
+    padding-top: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#header-img {
+    height: 60px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+#esctext{
+    display: flex;
+}
+
+.nav-link{
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/*Contenido*/
+main{
+    padding-top: 80px;
+}
+
+section{
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/*1section*/
+#monumental {
+    padding: 0;
+    margin: 0;
+}
+
+.feat {
+    position: relative;
+    width: 100%;
+}
+
+#stadium {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#monumental h2{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*2section*/
+iframe{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/*3section*/
+#precios {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.casaca{
+    width: 100%;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.imgC{
+    height: 400px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Registro*/
+#email{
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    max-width: 100%;
+}
+
+#submit{
+    background-color: #590;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;    
+}
+
+#submit:hover{
+    background-color: #490;
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #header-img {
+        height: 50px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin: 10px 0;
+    }
+     
+    #monumental h2{
+        font-size:1.5rem;
+    }
+
+    #precios {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .box {
+        width: 70%; 
+        margin: 10px 0; 
+        border: 1px solid #000;
+        border-radius: 3px;
+        max-width: 600px; 
+
+    .imgC {
+        height: 250px;
+        width: auto;
+    }
+
+
+    iframe {
+        height: 300px;
+    }
+
+    #email {
+        width: 100%;
+        max-width: none;
+    }
+}
